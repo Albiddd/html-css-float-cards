@@ -13,6 +13,7 @@ img{
     text-align: center;
     font-weight: 800;
     margin: 30px 0 40px 0;
+    color: rgb(255, 80, 133);
 }
 
 .container{
@@ -21,6 +22,51 @@ img{
 }
 .paragraph{
     text-align: center;
+    margin-bottom: 50px;
 }
 
 /* creazione card */
+
+.card{
+    color: white;
+    background-color: rgb(0, 0, 20);
+    box-shadow: 3px 3px 6px grey;
+}
+
+.col{
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+.row{
+    margin: 0 -15px;
+}
+
+.card__image{
+    float: left;
+    height: 90px;
+    width: 90px;
+    margin-right: 20px;
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+/* layout e decorazione testo */
+.card__name{
+    font-weight: 800;
+    font-size: 20px;
+    padding-top: 5px;
+}
+.card__email{
+    text-decoration: none;
+    color: rgb(108, 167, 235);
+}
+
+.card__name,.card__role,.card__email{
+    line-height: 1.5;
+}
